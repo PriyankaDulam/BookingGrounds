@@ -1,0 +1,17 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar fxLayoutAlign="center center" color = "primary">Admin Login</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="form">
+            <small *ngIf='invalidLogin' class="error">{{errorMsg}}</small>
+            <mat-form-field>
+              <input matInput placeholder="UserName" name="username" [(ngModel)] = "username">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type = "password" placeholder="Password" name="password" [(ngModel)] = "password">
+              </mat-form-field>
+             
+           <button mat-raised-button type="submit" color="primary" (click)=adminLogin() >Submit</button>
+          </form>
+          
+    </mat-card>
+</div>

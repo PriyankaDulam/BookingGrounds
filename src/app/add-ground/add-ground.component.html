@@ -1,0 +1,26 @@
+<app-admin-nav></app-admin-nav>
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+    <mat-card fxFlex="25">
+        <mat-toolbar fxLayoutAlign="center center" color = "primary">Add Ground</mat-toolbar>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="form">
+           
+            <mat-form-field>
+              <input matInput placeholder="Ground Name" name="GroundName" [(ngModel)] = "GroundName">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Ground Price" name="GroundPrice" [(ngModel)] = "GroundPrice">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Ground Location" name="GroundLocation" [(ngModel)] = "GroundLocation">
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Game Type" name="GameType" [(ngModel)] = "GameType" >
+              </mat-form-field>
+              <mat-form-field>
+                <input matInput placeholder="Ground Description" name="GroundDescription" [(ngModel)] = "GroundDescription" >
+              </mat-form-field>
+           <button mat-raised-button type="submit" color="primary" (click)=handleGround() >Save Changes</button>
+          </form>
+          
+    </mat-card>
+</div>
